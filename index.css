@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.body {
+    width: 100%;
+}
+
+.background {
+    background-image: url('./background.png');
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.logo a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Kiểu cho máy tính */
+.logo {
+    padding-left: 120px;
+    padding-top: 30px;
+}
+
+/* Kiểu cho điện thoại di động */
+@media only screen and (max-width: 768px) {
+    .logo {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .bannerleft {
+        padding-left: 20px; /* Thay đổi giá trị left padding cho mobile */
+        padding-top: 10px; /* Thay đổi giá trị top padding cho mobile */
+    }
+
+    .bannerleft h1 {
+        font-size: 30px; /* Thay đổi kích thước font cho mobile */
+    }
+
+    .bannerleft p {
+        font-size: 15px; /* Thay đổi kích thước font cho mobile */
+    }
+
+    .bannerleft button {
+        font-size: 14px; /* Thay đổi kích thước font cho mobile */
+    }
+    .bannerright {
+        display: none; /* Ẩn cả bannerleft và bannerright trên điện thoại di động */
+    }
+    .intro img {
+        width: 100%; /* Kích thước 100% theo chiều rộng của container cha */
+        max-width: 300px; /* Giới hạn chiều rộng tối đa là 500px */
+        height: auto; /* Duy trì tỷ lệ khung hình */
+    }
+    .han1{
+        background-color: rgb(27, 167, 167);
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;
+        width: 100%; /* Kích thước 100% theo chiều rộng của container cha */
+        max-width: 320px; /* Giới hạn chiều rộng tối đa là 500px */
+        color: black;
+        padding: 5px;
+    }
+    .han2{
+        font-weight: bold;
+        font-size: 20px;
+        width: 100%; /* Kích thước 100% theo chiều rộng của container cha */
+        max-width: 400px; /* Giới hạn chiều rộng tối đa là 500px */
+        color: black;
+    
+    }
+    .modal {
+        text-align: center;
+    }
+
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+}
+
+.logo a:hover {
+    color: rgb(56, 184, 165);
+}
+
+.bannerleft {
+    padding-left: 20px; /* Thay đổi giá trị left padding cho mobile */
+    padding-top: 50px;
+    color: white;
+}
+
+.bannerleft h1 {
+    font-size: 50px; /* Thay đổi kích thước font cho mobile */
+    font-weight: bold;
+}
+
+.bannerleft p {
+    font-size: 20px; /* Thay đổi kích thước font cho mobile */
+}
+
+.bannerleft button {
+    background-color: rgb(25, 96, 66);
+    border-radius: 10px;
+    font-size: 15px; /* Thay đổi kích thước font cho mobile */
+    border: none;
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+}
+.bannerright img {
+   
+    height: 400px;
+}
+
+.intro img {
+    width: 500px;
+    height: 500px;
+}
+.intro1{
+    background-color: rgb(10, 123, 85);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+}
+.intro2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.intro3 {
+    padding-top: 10px;
+    font-size: 20px;
+}
+.in {
+    margin-top: 20px;
+}
+.han1{
+    background-color: rgb(27, 167, 167);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 600px;
+    color: black;
+    padding: 5px;
+}
+.han2{
+    font-weight: bold;
+    font-size: 20px;
+    width: 800px;
+    color: black;
+
+}
+
+
+.section_our_solution .row {
+    align-items: center;
+  }
+  
+  .our_solution_category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .our_solution_category .solution_cards_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .solution_cards_box .solution_card {
+    flex: 0 50%;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+      0 5px 15px 0 rgba(37, 44, 97, 0.15);
+    border-radius: 15px;
+    margin: 8px;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 450px;
+    transition: 0.7s;
+  }
+  
+  .solution_cards_box .solution_card:hover {
+    background: #309df0;
+    color: #fff;
+    transform: scale(1.1);
+    z-index: 9;
+  }
+  
+  .solution_cards_box .solution_card:hover::before {
+    background: rgb(85 108 214 / 10%);
+  }
+  
+  .solution_cards_box .solution_card:hover .solu_title h3,
+  .solution_cards_box .solution_card:hover .solu_description p {
+    color: #fff;
+  }
+  
+  .solution_cards_box .solution_card:before {
+    content: "";
+    position: absolute;
+    background: rgb(85 108 214 / 5%);
+    width: 170px;
+    height: 400px;
+    z-index: -1;
+    transform: rotate(42deg);
+    right: -56px;
+    top: -23px;
+    border-radius: 35px;
+  }
+  
+  .solution_cards_box .solution_card:hover .solu_description button {
+    background: #fff !important;
+    color: #13906c;
+  }
+  
+  .solution_card .so_top_icon {
+  }
+  
+  .solution_card .solu_title h3 {
+    color: #212121;
+    font-size: 30px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-weight: bold;
+  }
+  
+  .solution_card .solu_description p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .solution_card .solu_description button {
+    border: 0;
+    border-radius: 15px;
+    background: linear-gradient(
+      140deg,
+      #42caa6 0%,
+      #42ca9d 50%,
+      #2ba492c7 75%
+    ) !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 5px;
+    padding: 5px 16px;
+  }
+  
+  .our_solution_content h1 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  .our_solution_content p {
+  }
+  
+  .hover_color_bubble {
+    position: absolute;
+    background: rgb(54 81 207 / 15%);
+    width: 100rem;
+    height: 100rem;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 16rem;
+    border-radius: 50%;
+    transform: rotate(-36deg);
+    left: -18rem;
+    transition: 0.7s;
+  }
+  
+  .solution_cards_box .solution_card:hover .hover_color_bubble {
+    top: 0rem;
+  }
+  
+  .solution_cards_box .solution_card .so_top_icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .solution_cards_box .solution_card .so_top_icon img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+  
+  /*start media query*/
+  @media screen and (min-width: 320px) {
+    .sol_card_top_3 {
+      position: relative;
+      top: 0;
+    }
+  
+    .our_solution_category {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .our_solution_category .solution_cards_box {
+      flex: auto;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .our_solution_category .solution_cards_box {
+      flex: 1;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .sol_card_top_3 {
+      position: relative;
+      top: -3rem;
+    }
+    .our_solution_category {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
