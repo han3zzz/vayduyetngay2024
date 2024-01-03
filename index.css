@@ -85,9 +85,9 @@
     }
     .typing-container img {
       width: 100%; /* Kích thước 100% theo chiều rộng của container cha */
-      max-width: 350px; /* Giới hạn chiều rộng tối đa là 500px */
+      max-width: 300px; /* Giới hạn chiều rộng tối đa là 500px */
       height: 100%;
-      max-height: 80px;
+      max-height: 60px;
     }
 }
 .typing-container img {
