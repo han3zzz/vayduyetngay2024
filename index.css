@@ -339,4 +339,16 @@
       margin: 0 auto;
     }
   }
-  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blinking-text {
+    animation: blink 1s infinite;
+    color: red;
+    font-size: 15px;
+    font-family: Tahoma;
+    font-weight: bold;
+}
