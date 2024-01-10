@@ -347,7 +347,7 @@
 
 .blinking-text {
     animation: blink 1s infinite;
-    color: red;
+    color: rgb(120, 4, 133);
     font-size: 15px;
     font-family: Tahoma;
     font-weight: bold;
